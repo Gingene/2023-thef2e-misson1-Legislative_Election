@@ -1,0 +1,25 @@
+@mixin marqee {
+  @extend .d-flex;
+  @extend .overflow-hidden;
+  @extend .text-nowrap;
+}
+
+.marqee {
+  @include marqee;
+}
+
+.marqee-animation {
+  animation: marqee 7s linear infinite;
+}
+
+@keyframes marqee {
+  0% {
+    left: 100%;
+    transform: translateX(0%);
+  }
+
+  100% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+}

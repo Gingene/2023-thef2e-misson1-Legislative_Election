@@ -1,0 +1,11 @@
+.loading-animation {
+  position: absolute;
+  background: #fff;
+  overflow-x: hidden;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  //   left: 50%;
+  transform: translate(-50% -50%);
+}

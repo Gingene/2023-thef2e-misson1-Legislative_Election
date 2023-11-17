@@ -1,0 +1,53 @@
+.main-img {
+  width: 723px;
+}
+
+.event-main-img {
+  height: 241px;
+  aspect-ratio: 2;
+  @include pad {
+    height: 443px;
+  }
+  @include pc {
+    height: 431px;
+  }
+}
+
+.event-side-img {
+  width: 109px;
+  @include pc {
+    width: 201px;
+    height: 134px;
+  }
+}
+
+.event-modal-img {
+  aspect-ratio: 2;
+  object-fit: cover;
+  height: 251px;
+  @include pad {
+    height: 443px;
+  }
+  @include pc {
+    height: 318px;
+  }
+}
+
+.event-modal-side-img {
+  width: 100%;
+  @include pc {
+    height: 134px;
+  }
+}
+
+.event-icon {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 32;
+  font-size: 2rem;
+}
+
+.donate-img {
+  height: 105px;
+  @include xxl {
+    height: auto;
+  }
+}

@@ -1,0 +1,11 @@
+.main-btn {
+  display: flex;
+  border: none;
+  border-radius: 500px;
+  padding: 1rem 1.5rem;
+  align-items: center;
+}
+.event-btn {
+  @extend .main-btn;
+  background-color: #f1f5f9;
+}

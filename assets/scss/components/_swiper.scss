@@ -1,0 +1,57 @@
+.swiper {
+  overflow: initial;
+}
+
+.my-swiper-button {
+  position: relative;
+  margin-top: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  &::after {
+    font-family: "Material Symbols Outlined";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    color: $main;
+    font-size: 1.5rem;
+  }
+}
+
+.swiper-button-prev {
+  @extend .my-swiper-button;
+  margin-right: 1rem;
+  &::after {
+    content: "arrow_back";
+  }
+}
+
+.swiper-button-next {
+  @extend .my-swiper-button;
+  margin-left: 1rem;
+  &::after {
+    content: "arrow_forward";
+  }
+}
+
+.swiper-pagination.swiper-pagination-horizontal {
+  position: relative;
+  width: auto;
+  bottom: 0;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0.2rem 1rem;
+  background-color: $main;
+  opacity: 0.4;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet-active {
+  opacity: 1;
+}
