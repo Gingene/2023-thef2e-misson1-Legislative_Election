@@ -1,9 +1,11 @@
-// import animation from "./assets/lottie/loading.json?url";
 import animation from "../lottie/loading.json?url";
-import lottie from "lottie-web/build/player/lottie.min.js";
+import lottie from "lottie-web";
 
 export default function opening() {
+  const animationDiv = document.querySelector(".animation");
   const loadingElement = document.querySelector(".loading-animation");
+  const bottomNav = document.querySelector(".fixed-bottom");
+  animationDiv.classList.remove("d-none");
 
   const loading = lottie.loadAnimation({
     container: loadingElement, // the dom element that will contain the animation
@@ -15,6 +17,8 @@ export default function opening() {
 
   loading.addEventListener("loopComplete", () => {
     loading.destroy();
-    loadingElement.style.display = "none";
+    animationDiv.classList.add("d-none");
+    bottomNav.classList.remove("d-none");
+    sessionStorage.setItem("op", "completed");
   });
 }

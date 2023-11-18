@@ -1,8 +1,6 @@
-@import "./layout/header.scss";
-
 @import "./helpers/mixin";
 @import "./custom.scss";
 
 @import "./base/base";
 @import "./components/components";
-// @import "./pages/animation";
+@import "./helpers/customUtilities";

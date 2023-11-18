@@ -1,0 +1,12 @@
+.modal-f2e {
+  @include pad {
+    max-width: 80%;
+  }
+}
+
+.modal-event-width {
+  width: calc(50% - 8px);
+  @include pc {
+    width: calc(100% / 3);
+  }
+}

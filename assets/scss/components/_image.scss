@@ -2,6 +2,11 @@
   width: 723px;
 }
 
+.nav-bottom-img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .event-main-img {
   height: 241px;
   aspect-ratio: 2;
@@ -49,5 +54,21 @@
   height: 105px;
   @include xxl {
     height: auto;
+  }
+}
+
+.donate-modal-img {
+  width: 95px;
+  height: 98px;
+  @include pc {
+    width: 336px;
+    height: 348px;
+  }
+}
+
+.service-modal-img {
+  height: 147px;
+  @include pc {
+    height: 480px;
   }
 }

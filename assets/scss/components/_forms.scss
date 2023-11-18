@@ -1,0 +1,6 @@
+.donate-form {
+  height: 331px;
+  @include pad {
+    height: auto;
+  }
+}

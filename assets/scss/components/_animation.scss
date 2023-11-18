@@ -1,0 +1,6 @@
+.loading-animation {
+  width: 50%;
+  @include pad {
+    width: 10vw;
+  }
+}
