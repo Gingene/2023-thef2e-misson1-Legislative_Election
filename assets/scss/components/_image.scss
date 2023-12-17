@@ -51,6 +51,13 @@
 }
 
 .donate-img {
+  height: 150px;
+  @include xxl {
+    height: auto;
+  }
+}
+
+.service-img {
   height: 105px;
   @include xxl {
     height: auto;

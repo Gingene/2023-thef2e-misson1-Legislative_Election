@@ -2,23 +2,21 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
 const swiper = new Swiper(".swiper", {
-  pagination: {
-    el: ".swiper-pagination",
-  },
   slidesPerView: 1.2,
   centeredSlides: true,
-  spaceBetween: 24,
+  slidesOffsetBefore: -30,
   loop: true,
   grabCursor: true,
   // perspective: true,
-  // mousewheel: {
-  //   forceToAxis: true,
-  // },
+  mousewheel: {
+    forceToAxis: true,
+  },
   effect: "coverflow",
   coverflowEffect: {
-    depth: 200,
+    // depth: 100,
+    modifier: 2,
     rotate: 0,
-    stretch: -20,
+    stretch: -24,
     slideShadows: false,
   },
 
@@ -41,16 +39,17 @@ const swiper = new Swiper(".swiper", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 1.3,
       coverflowEffect: {
-        stretch: -60,
+        stretch: -40,
+      },
+    },
+    992: {
+      coverflowEffect: {
+        stretch: -48,
       },
     },
     1200: {
       slidesPerView: 1.7,
-      coverflowEffect: {
-        stretch: -60,
-      },
     },
   },
 });
